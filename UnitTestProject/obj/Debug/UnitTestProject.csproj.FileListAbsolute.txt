@@ -26,3 +26,30 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\bin\Debug\System.W
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.dll
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\TestAutomation.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.Mvc.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.Unity.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Unity.Mvc5.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\ServicesAndInterfaces.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Entities.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.Razor.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\TestAutomation.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.Mvc.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.Unity.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\ServicesAndInterfaces.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Entities.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.Razor.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.Razor.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.dll
+F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.pdb

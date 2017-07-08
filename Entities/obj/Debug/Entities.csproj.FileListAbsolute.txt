@@ -7,3 +7,7 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\Entities\bin\Debug\Entities.dll
 C:\Users\Ankita Sachan\Desktop\AutomationTest\Entities\bin\Debug\Entities.pdb
 C:\Users\Ankita Sachan\Desktop\AutomationTest\Entities\obj\Debug\Entities.dll
 C:\Users\Ankita Sachan\Desktop\AutomationTest\Entities\obj\Debug\Entities.pdb
+F:\Git hub repositiory\DITest\Entities\bin\Debug\Entities.dll
+F:\Git hub repositiory\DITest\Entities\bin\Debug\Entities.pdb
+F:\Git hub repositiory\DITest\Entities\obj\Debug\Entities.dll
+F:\Git hub repositiory\DITest\Entities\obj\Debug\Entities.pdb

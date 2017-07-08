@@ -18,6 +18,7 @@ namespace TestProject
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IDataManager,DataManager>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+          
         }
     }
 }

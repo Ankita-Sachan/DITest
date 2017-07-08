@@ -30,3 +30,45 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practice
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.xml
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Git hub repositiory\DITest\TestProject\bin\TestProject.dll.config
+F:\Git hub repositiory\DITest\TestProject\bin\TestProject.dll
+F:\Git hub repositiory\DITest\TestProject\bin\TestProject.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\Entities.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Owin.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.ServiceLocation.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.Web.Common.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.Web.Mvc.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Owin.dll
+F:\Git hub repositiory\DITest\TestProject\bin\ServicesAndInterfaces.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Helpers.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Mvc.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Razor.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Deployment.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Razor.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Unity.Mvc5.dll
+F:\Git hub repositiory\DITest\TestProject\bin\WebActivatorEx.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Entities.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Owin.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.ServiceLocation.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.ServiceLocation.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.Web.Common.xml
+F:\Git hub repositiory\DITest\TestProject\bin\Ninject.Web.Mvc.xml
+F:\Git hub repositiory\DITest\TestProject\bin\ServicesAndInterfaces.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Razor.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Deployment.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Razor.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Helpers.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Mvc.xml
+F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
+F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.dll
+F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.pdb
