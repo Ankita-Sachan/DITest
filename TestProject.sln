@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{35ABE947-B8E9-48CF-87B0-FE3C08110006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomation", "TestAutomation\TestAutomation.csproj", "{3220AF41-7F9E-4DBB-B0E2-9B488FEB71E2}"
-	ProjectSection(ProjectDependencies) = postProject
-		{AAC43736-AE6D-41E0-836C-0823E1E888E4} = {AAC43736-AE6D-41E0-836C-0823E1E888E4}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesAndInterfaces", "ServicesAndInterfaces\ServicesAndInterfaces.csproj", "{AAC43736-AE6D-41E0-836C-0823E1E888E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{CB2822A5-8E9B-4CEF-93FB-C35638E43139}"
@@ -30,10 +25,6 @@ Global
 		{35ABE947-B8E9-48CF-87B0-FE3C08110006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35ABE947-B8E9-48CF-87B0-FE3C08110006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35ABE947-B8E9-48CF-87B0-FE3C08110006}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3220AF41-7F9E-4DBB-B0E2-9B488FEB71E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3220AF41-7F9E-4DBB-B0E2-9B488FEB71E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3220AF41-7F9E-4DBB-B0E2-9B488FEB71E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3220AF41-7F9E-4DBB-B0E2-9B488FEB71E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAC43736-AE6D-41E0-836C-0823E1E888E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAC43736-AE6D-41E0-836C-0823E1E888E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAC43736-AE6D-41E0-836C-0823E1E888E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
