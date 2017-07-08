@@ -1,0 +1,14 @@
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.dll
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.pdb
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\bin\Debug\Entities.dll
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\bin\Debug\Entities.pdb
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.csprojResolveAssemblyReference.cache
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.dll
+F:\Git hub repositiory\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.pdb
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.dll
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.pdb
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\bin\Debug\Entities.dll
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\bin\Debug\Entities.pdb
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.dll
+C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.pdb
