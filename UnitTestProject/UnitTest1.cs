@@ -10,7 +10,7 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod1()
         {
-           var dc=new Mock
+           
         }
     }
 }
