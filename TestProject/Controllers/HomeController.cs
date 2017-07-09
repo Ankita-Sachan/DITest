@@ -20,6 +20,7 @@ namespace TestProject.Controllers
       
         public ActionResult AllPerson()
         {
+
             return View(_manager.GetAll());
         }
        

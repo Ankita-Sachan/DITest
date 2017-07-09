@@ -8,7 +8,10 @@ namespace ServicesAndInterfaces.Interfaces
 {
     public interface IDataManager
     {
+        bool CreateXml();
         List<Person> GetAll();
-        Person Get(int id);
+        Person GetNode(int id);
+        bool DeleteNode(int id);
+        Boolean InsertNode(Person person);
     }
 }

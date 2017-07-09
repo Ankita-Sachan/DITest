@@ -8,8 +8,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{35ABE947-B8E9-48CF-87B0-FE3C08110006}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesAndInterfaces", "ServicesAndInterfaces\ServicesAndInterfaces.csproj", "{AAC43736-AE6D-41E0-836C-0823E1E888E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35ABE947-B8E9-48CF-87B0-FE3C08110006} = {35ABE947-B8E9-48CF-87B0-FE3C08110006}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{CB2822A5-8E9B-4CEF-93FB-C35638E43139}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAC43736-AE6D-41E0-836C-0823E1E888E4} = {AAC43736-AE6D-41E0-836C-0823E1E888E4}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

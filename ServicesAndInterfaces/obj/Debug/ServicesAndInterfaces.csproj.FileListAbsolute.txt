@@ -12,10 +12,10 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\bin\Debug\En
 C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.csprojResolveAssemblyReference.cache
 C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.dll
 C:\Users\Ankita Sachan\Desktop\AutomationTest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.pdb
+F:\Git hub repositiory\DITest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.csprojResolveAssemblyReference.cache
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.dll
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\bin\Debug\ServicesAndInterfaces.pdb
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\bin\Debug\Entities.dll
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\bin\Debug\Entities.pdb
-F:\Git hub repositiory\DITest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.csprojResolveAssemblyReference.cache
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.dll
 F:\Git hub repositiory\DITest\ServicesAndInterfaces\obj\Debug\ServicesAndInterfaces.pdb

@@ -30,6 +30,7 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practice
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.xml
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Ankita Sachan\Desktop\AutomationTest\TestProject\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
 F:\Git hub repositiory\DITest\TestProject\bin\TestProject.dll.config
 F:\Git hub repositiory\DITest\TestProject\bin\TestProject.dll
 F:\Git hub repositiory\DITest\TestProject\bin\TestProject.pdb
@@ -69,6 +70,5 @@ F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Deployment.xml
 F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Webpages.Razor.xml
 F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Helpers.xml
 F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Mvc.xml
-F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
 F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.dll
 F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.pdb
