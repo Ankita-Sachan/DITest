@@ -6,12 +6,10 @@ using Entities.Models;
 
 namespace ServicesAndInterfaces.Interfaces
 {
-    public interface ICheckNode
+    public interface IDataFileValidation
     {
-
-
-         string FileName { get; }
-        
+        string FileName { get; }
         bool IsNodeExist(int id);
+        bool IsFileExist();
     }
 }

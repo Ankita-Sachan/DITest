@@ -12,7 +12,7 @@ namespace ServicesAndInterfaces.Interfaces
         List<Person> GetAll();
         Person GetNode(int id);
         bool DeleteNode(int id);
-        Boolean InsertNode(Person person);
-        
+        bool InsertNode(Person person);
+
     }
 }

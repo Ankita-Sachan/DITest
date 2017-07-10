@@ -12,44 +12,50 @@ namespace ServicesAndInterfaces.Services
 {
     public class DataManager : IDataManager
     {
-        
-        private string fileName ;
 
-        public DataManager(ICheckNode _iChechNode)
+        private string fileName;
+
+        public DataManager(IDataFileValidation _iChechNode)
         {
             fileName = _iChechNode.FileName;
         }
 
-        public bool CreateXml() {
-             
-            if (!File.Exists(fileName))
+        public bool CreateXml()
+        {
+
+            try
             {
-                XmlWriterSettings settings = new XmlWriterSettings();
-                settings.Indent = true;
-                settings.IndentChars = ("    ");
-                settings.CloseOutput = true;
-                settings.OmitXmlDeclaration = true;
-                Person person = new Person();
-                person.id = 1;
-                person.Name = "Ankita Sachan";
-                person.Age = 25;
-                person.Gender = "Female";
-                using (XmlWriter writer = XmlWriter.Create(fileName, settings))
+                if (!File.Exists(fileName))
                 {
-                    writer.WriteStartElement("Persons");
-                    writer.WriteStartElement("Person");
-                    writer.WriteAttributeString("id", Convert.ToString(person.id));
-                    writer.WriteElementString("Name", person.Name);
-                    writer.WriteElementString("Age", person.Age.ToString());
-                    writer.WriteElementString("Gender", person.Gender);
-                    writer.WriteEndElement();
-                    writer.WriteEndElement();
-                    writer.Flush();
+                    XmlWriterSettings settings = new XmlWriterSettings();
+                    settings.Indent = true;
+                    settings.IndentChars = ("    ");
+                    settings.CloseOutput = true;
+                    settings.OmitXmlDeclaration = true;
+                    Person person = new Person();
+                    person.id = 2;
+                    person.Name = "Ankita Sachan";
+                    person.Age = 25;
+                    person.Gender = "Female";
+                    using (XmlWriter writer = XmlWriter.Create(fileName, settings))
+                    {
+                        writer.WriteStartElement("Persons");
+                        writer.WriteStartElement("Person");
+                        writer.WriteAttributeString("id", Convert.ToString(person.id));
+                        writer.WriteElementString("Name", person.Name);
+                        writer.WriteElementString("Age", person.Age.ToString());
+                        writer.WriteElementString("Gender", person.Gender);
+                        writer.WriteEndElement();
+                        writer.WriteEndElement();
+                        writer.Flush();
+                    }
+                    Console.WriteLine("Xml File Path has been Created.\nPath is " + fileName + ".\n");
                 }
-                Console.WriteLine("Xml File Path has been Created.\nPath is " + fileName + ".\n");
+
+                return true;
+
             }
-            
-            return true;
+            catch { return false; }
         }
         public List<Person> GetAll()
         {
@@ -62,14 +68,14 @@ namespace ServicesAndInterfaces.Services
             }
             var query = from d in doc.Root.Descendants("Person")
                         select d;
-           
+
             foreach (System.Xml.Linq.XElement q in query)
             {
                 lstPerson.Add(new Person { id = Convert.ToInt16(q.FirstAttribute.Value), Name = q.Element("Name").Value, Age = Convert.ToInt16(q.Element("Age").Value), Gender = q.Element("Gender").Value });
             }
             doc = null;
             return lstPerson;
-        }      
+        }
         public Person GetNode(int id)
         {
             Person person = new Person();

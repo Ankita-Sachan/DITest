@@ -10,11 +10,11 @@ using System.Xml;
 
 namespace ServicesAndInterfaces.Services
 {
-    public class CheckNode : ICheckNode
+    public class DataFileValidation : IDataFileValidation
     {
 
         private string fileName;
-        public CheckNode(string _fileName)
+        public DataFileValidation(string _fileName)
         {
             fileName = _fileName;
         }
@@ -38,12 +38,21 @@ namespace ServicesAndInterfaces.Services
                 return true;
             }
         }
-        
 
-      
-        string ICheckNode.FileName
+
+
+        string IDataFileValidation.FileName
         {
             get { return fileName; }
+        }
+
+
+        public bool IsFileExist()
+        {
+            if (File.Exists(fileName))
+                return true;
+            else
+                return false;
         }
     }
 }

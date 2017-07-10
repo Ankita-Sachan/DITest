@@ -14,12 +14,12 @@ namespace TestProject.Controllers
     {
         private IDataManager _manager;
 
-      
+
         public HomeController(IDataManager manager)
         {
             _manager = manager;
         }
-      
+
         public ActionResult Xml()
         {
             _manager.CreateXml();
@@ -37,9 +37,9 @@ namespace TestProject.Controllers
                 return false;
             }
         }
-        public ActionResult Delete(int id) 
+        public ActionResult Delete(int id)
         {
-            try 
+            try
             {
                 _manager.DeleteNode(id);
                 return View("Xml", _manager.GetAll());
@@ -48,32 +48,36 @@ namespace TestProject.Controllers
             {
                 return View("Xml", _manager.GetAll());
             }
-           
+
         }
 
         [HttpGet]
-        public PartialViewResult InserNode()
+        public PartialViewResult InsertNode()
         {
-           
-                return PartialView("InserNode");
-           
+            return PartialView();
         }
+
 
 
         [HttpPost]
-        public ActionResult Insert(int id, int Age, string Name, string Gender)
+        public ActionResult InsertNode(int id, int Age, string Name, string Gender)
         {
-            try {
+            try
+            {
                 Person person = new Person();
+                //if (!(id > 0 && id <= 90))
+                //{
+                //    ModelState.AddModelError("id", "Please enter");
+                //}
+
                 person.id = id; person.Age = Age; person.Name = Name; person.Gender = Gender;
                 _manager.InsertNode(person);
-                return Redirect(Url.Action("Xml"));
+                return Json(true);
             }
-            catch {
-                return Json("test Fail");
+            catch
+            {
+                return Json(false);
             }
         }
-        
-
     }
 }

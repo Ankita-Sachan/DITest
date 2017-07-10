@@ -50,7 +50,7 @@ namespace TestProject.App_Start
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
                 string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Persons.xml");
                 //CheckNode m = kernel.Get<CheckNode>(new ConstructorArgument("_fileName", fileName));
-                kernel.Bind<ICheckNode>().To<CheckNode>().WithConstructorArgument(typeof(string), fileName);
+                kernel.Bind<IDataFileValidation>().To<DataFileValidation>().WithConstructorArgument(typeof(string), fileName);
                 kernel.Bind<IDataManager>().To<DataManager>();
                 
                 RegisterServices(kernel);

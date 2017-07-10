@@ -5,10 +5,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @{string path = "Xml File Persons.xml successfully created in " + AppDomain.CurrentDomain.BaseDirectory;}
-
 <h2>Xml Operation</h2>
 <p>@path</p>
-
 <div class="table-responsive">
     <table class="table table-bordered" cellpadding="0" cellspacing="0">
         <tr>
@@ -26,21 +24,13 @@
                 <td>@person.Age</td>
                 <td>@person.Gender</td>
                 <td><a onclick="Delete(@person.id)">Delete</a></td>
-
             </tr>
         }
     </table>
 </div>
-
-<p><input type="button" value="Insert Node" onclick="InsertNode();" /></p>
-
-@*<div class="panel panel-primary">
-    <div class="panel-head"><span class="panel-heading">InsertNode</span>
-    </div>
-        <div id="insertNode" class="panel-body">
-
-        </div>
-    </div>*@
+<p>
+    <a id="link" onclick="InsertNode();">Create Node</a>
+</p>
 <div id="insertNode">
 
 </div>
@@ -55,12 +45,13 @@
                 }
 
             },
-            Error:function(){
+            Error: function () {
                 alert("Error");
             }
         });
     }
-    function Delete(id){
+    function Delete(id) {
+        debugger;
         $.ajax({
             url: "/Home/Delete",
             data: { id: id }
@@ -73,9 +64,14 @@
     }
 
     function InsertNode() {
+        debugger
         $.ajax({
-            url: "/Home/InserNode",
-                    success: function (html) { $("#insertNode").append(html); }
-                });
+            type: 'GET',
+            dataType: 'html',
+            url: "/Home/InsertNode",
+            success: function (data) {
+                $('#insertNode').html(data);
+            }
+        });
     }
 </script>
