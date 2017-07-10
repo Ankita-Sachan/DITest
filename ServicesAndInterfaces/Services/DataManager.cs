@@ -95,13 +95,15 @@ namespace ServicesAndInterfaces.Services
         }
         public bool DeleteNode(int id)
         {
+            if (!IsNodeExist(id)) { return false; }
+
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode t = doc.SelectSingleNode("Persons/Person[@id='" + id + "']");
-           
+
             if (t == null)
             {
-                
+
                 doc = null;
                 return false;
             }
@@ -113,12 +115,13 @@ namespace ServicesAndInterfaces.Services
                 doc = null;
                 return true;
             }
-            
+
         }
         public Boolean InsertNode(Person person)
         {
+            if (IsNodeExist(person.id)) { return false; }
             bool insertAfter = false;
-            int idAfter=0;
+            int idAfter = 0;
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNodeList nodes = doc.GetElementsByTagName("Person");
@@ -133,16 +136,11 @@ namespace ServicesAndInterfaces.Services
             if (lstIds.Count > 0)
             {
                 lstIds.Sort();
-               
+
                 if (person.id > lstIds[lstIds.Count - 1])
                 {
                     idAfter = lstIds[lstIds.Count - 1];
                     insertAfter = true;
-                }
-                else if (lstIds.Contains(person.id))
-                {
-                    doc = null;
-                    return false;
                 }
                 else
                 {
@@ -157,14 +155,13 @@ namespace ServicesAndInterfaces.Services
                         idAfter = lstIds[i];
                         insertAfter = true;
                     }
-                    else {
-                        idAfter = lstIds[i+1];
+                    else
+                    {
+                        idAfter = lstIds[i + 1];
                         insertAfter = false;
                     }
-                      
+
                 }
-                
-               
             }
             else
             {
@@ -174,7 +171,7 @@ namespace ServicesAndInterfaces.Services
                 //doc.DocumentElement.InsertAfter(xmlElement, xmlnode);
 
 
-                 child = doc.CreateElement("Name");
+                child = doc.CreateElement("Name");
                 child.Attributes.RemoveNamedItem("xmlns");
                 child.InnerXml = person.Name;
                 xmlElement.AppendChild(child);
@@ -194,7 +191,8 @@ namespace ServicesAndInterfaces.Services
             XmlNode xmlnode = doc.SelectSingleNode("//Person[@id=\"" + idAfter + "\"]");
             XmlElement xmlElement1 = doc.CreateElement("Person");
             xmlElement1.SetAttribute("id", person.id.ToString());
-            if (insertAfter) {
+            if (insertAfter)
+            {
                 doc.DocumentElement.InsertAfter(xmlElement1, xmlnode);
             }
             else
@@ -219,6 +217,25 @@ namespace ServicesAndInterfaces.Services
             doc.Save(fileName);
             doc = null;
             return true;
+        }
+        public bool IsNodeExist(int id)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(fileName);
+            XmlNode t = doc.SelectSingleNode("Persons/Person[@id='" + id + "']");
+
+            if (t == null)
+            {
+
+                doc = null;
+                return false;
+            }
+
+            else
+            {
+                doc = null;
+                return true;
+            }
         }
     }
 }

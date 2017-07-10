@@ -13,5 +13,6 @@ namespace ServicesAndInterfaces.Interfaces
         Person GetNode(int id);
         bool DeleteNode(int id);
         Boolean InsertNode(Person person);
+        bool IsNodeExist(int id);
     }
 }
