@@ -72,3 +72,10 @@ F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Mvc.xml
 F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
 F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.dll
 F:\Git hub repositiory\DITest\TestProject\obj\Debug\TestProject.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\Antlr3.Runtime.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Newtonsoft.Json.dll
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Optimization.dll
+F:\Git hub repositiory\DITest\TestProject\bin\WebGrease.dll
+F:\Git hub repositiory\DITest\TestProject\bin\Antlr3.Runtime.pdb
+F:\Git hub repositiory\DITest\TestProject\bin\Newtonsoft.Json.xml
+F:\Git hub repositiory\DITest\TestProject\bin\System.Web.Optimization.xml

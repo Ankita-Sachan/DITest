@@ -1,0 +1,45 @@
+﻿@using Entities.Models;
+@model Person
+<div>
+    <form id="testForm" method="post">
+        <fieldset>
+            <legend>Please Write Node Value</legend>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.id)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.id)
+                @Html.ValidationMessageFor(model => model.id, "Please enter digits", new { @class = "text-info" })
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Age)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Age)
+                @Html.ValidationMessageFor(model => model.Age, "Please enter digits", new { @class = "text-info" })
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Gender)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Gender)
+                @Html.ValidationMessageFor(model => model.Gender, "Please enter string", new { @class = "text-info" })
+            </div>
+            <p></p>
+            <p>
+                <input type="button" class="btn btn-primary insert" value="Create" id="create" onclick="CreateNode();" />
+            </p>
+        </fieldset>
+    </form>
+</div>
+
+@*<script type="text/javascript">
+
+    </script>*@

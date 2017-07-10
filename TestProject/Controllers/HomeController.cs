@@ -13,11 +13,16 @@ namespace TestProject.Controllers
     public class HomeController : Controller
     {
         private IDataManager _manager;
+        private IDataFileValidation _managerValidation;
 
-
-        public HomeController(IDataManager manager)
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public HomeController(IDataManager manager,IDataFileValidation  managerValidate)
         {
             _manager = manager;
+            _managerValidation = managerValidate;
         }
 
         public ActionResult Xml()
@@ -35,6 +40,21 @@ namespace TestProject.Controllers
             catch
             {
                 return false;
+            }
+        }
+        [HttpPost]
+        public ActionResult CheckNode(int id)
+        {
+            try
+            {
+               if( _managerValidation.IsNodeExist(id))
+                return Json(true);
+               else
+                   return Json(false);
+            }
+            catch
+            {
+                return Json(false);
             }
         }
         public ActionResult Delete(int id)

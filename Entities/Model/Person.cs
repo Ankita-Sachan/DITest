@@ -11,9 +11,7 @@ namespace Entities.Models
         [Required]
         [Range(0, 90, ErrorMessage = "Can only be between 0 .. 90")]
         public int id;
-        [Required]
-        [MaxLength(12)]
-        [MinLength(1)]
+       [Required(ErrorMessage = "Name is Required")]
         public string Name;
         [Required]
         [MaxLength(12)]

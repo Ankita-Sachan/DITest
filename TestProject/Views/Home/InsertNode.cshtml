@@ -32,6 +32,7 @@
                 @Html.TextBoxFor(model => model.Gender)
                 @Html.ValidationMessageFor(model => model.Gender, "Please enter string", new { @class = "text-info" })
             </div>
+            <p></p>
             <p>
                 <input type="button" class="btn btn-primary insert" value="Create" id="create" onclick="CreateNode();" />
             </p>
@@ -40,22 +41,77 @@
 </div>
 
 <script type="text/javascript">
+    //$(document).ready(function () {
+    //    $('input').on('blur', function () {
+    //        if ($("#testForm").valid()) {
+    //            $('#create').prop('disabled', false);
+    //        } else {
+    //            $('#create').prop('disabled', 'disabled');
+    //        }
+    //    });
+    //    $("#testForm").validate({
+    //        rules: {
+    //            Name: {
+    //                required: true,
+    //                minlength: 2
+    //            },
+    //            Gender: {
+    //                required: true,
+    //                minlength: 2
+    //            }
+    //        }
+    //    });
+    //});
+
     function CreateNode() {
-        var Person = { id: parseInt($("#id").val()), Name: $("#Name").val(), Age: parseInt($("#Age").val()), Gender: $("#Gender").val() };
-        var newUrl = '@Url.Action("Xml","Home")';
+        debugger;
+        var id = $("#id").val();
+        if (isNaN(parseInt(id))) {
+            return;
+        }
+        var check;
         $.ajax({
             type: "POST",
-            url: '@Url.Action("InsertNode", "Home")',
-            data: Person,
+            url: '@Url.Action("CheckNode", "Home")',
+            data: {id:id},
             dataType: 'json',
             success: function (data) {
-                alert("inserted");
-                window.location.href = newUrl;
+                check = data;
+                if (data) {
+                    
+                    alert('Node id already exist');
+                    return;
+                }
+                else {
+                    var age = $("#Age").val();
+                    var name = $("#Name").val();
+                    var gender = $("#Gender").val();
+                    if (isNaN(parseInt(id)) && isNaN(parseInt(age)) && name == "" && gender == "") {
+                        return;
+                    }
+                    $('#create').prop('disabled', true);
+                    var Person = { id: parseInt(id), Name: name, Age: parseInt(age), Gender: gender };
+                    var newUrl = '@Url.Action("Xml","Home")';
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("InsertNode", "Home")',
+                        data: Person,
+                        dataType: 'json',
+                        success: function (data) {
+                            alert("inserted");
+                            window.location.href = newUrl;
+                        },
+                        Error: function () {
+                            alert("Error");
+                        }
+                    });
+                }
             },
             Error: function () {
                 alert("Error");
             }
         });
+        
 
     }
 </script>

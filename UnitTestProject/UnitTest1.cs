@@ -16,7 +16,6 @@ namespace UnitTestProject
         private string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Persons.xml");
         private Mock<IDataFileValidation> chk = new Mock<IDataFileValidation>();
 
-
         public UnitTest1()
         {
             chk.SetupGet(x => x.FileName).Returns(fileName);
@@ -48,7 +47,7 @@ namespace UnitTestProject
         [TestMethod]
         public void InsertNode()
         {
-            Person person = new Person { id = 1, Name = "Ankita", Age = 2, Gender = "Female" };
+            Person person = new Person { id = 6, Name = "Ankita", Age = 2, Gender = "Female" };
             IsFileExist();
             DataManager obje = new DataManager(chk.Object);
             Assert.AreEqual(obje.InsertNode(person), true);
