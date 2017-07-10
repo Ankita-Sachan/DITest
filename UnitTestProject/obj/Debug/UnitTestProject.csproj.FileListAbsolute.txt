@@ -28,7 +28,6 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTest
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.pdb
 F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.dll
 F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.pdb
-F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\TestAutomation.dll
 F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\System.Web.Mvc.dll
 F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Microsoft.Practices.Unity.dll
 F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Unity.Mvc5.dll

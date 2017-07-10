@@ -1,0 +1,81 @@
+﻿@using Entities.Models;
+@model IEnumerable<Person>
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{string path = "Xml File Persons.xml successfully created in " + AppDomain.CurrentDomain.BaseDirectory;}
+
+<h2>Xml Operation</h2>
+<p>@path</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Action</th>
+        </tr>
+        @foreach (Person person in Model)
+        {
+            <tr>
+                <td>@person.id</td>
+                <td>@person.Name</td>
+                <td>@person.Age</td>
+                <td>@person.Gender</td>
+                <td><a onclick="Delete(@person.id)">Delete</a></td>
+
+            </tr>
+        }
+    </table>
+</div>
+
+<p><input type="button" value="Insert Node" onclick="InsertNode();" /></p>
+
+@*<div class="panel panel-primary">
+    <div class="panel-head"><span class="panel-heading">InsertNode</span>
+    </div>
+        <div id="insertNode" class="panel-body">
+
+        </div>
+    </div>*@
+<div id="insertNode">
+
+</div>
+<script type="text/javascript">
+
+    function CreateXml() {
+        $.ajax({
+            url: "/Home/Create",
+            success: function (data) {
+                if (data) {
+                    alert("success");
+                }
+
+            },
+            Error:function(){
+                alert("Error");
+            }
+        });
+    }
+    function Delete(id){
+        $.ajax({
+            url: "/Home/Delete",
+            data: { id: id }
+        }).done(function (response) {
+            debugger;
+            alert('Deleted');
+
+            window.location.href = '@Url.Action("Xml", "Home")';
+        });
+    }
+
+    function InsertNode() {
+        $.ajax({
+            url: "/Home/InserNode",
+                    success: function (html) { $("#insertNode").append(html); }
+                });
+    }
+</script>
