@@ -6,6 +6,7 @@ using ServicesAndInterfaces.Interfaces;
 using Entities;
 
 using Moq;
+using System.IO;
 
 namespace UnitTestProject
 {
@@ -15,11 +16,13 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod1()
         {
-            Mock<DataManager> chk = new Mock<DataManager>();
+            string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Persons.xml");
+            Mock<CheckNode> chk = new Mock<CheckNode>(fileName);
+            
             chk.Setup(x => x.IsNodeExist(2)).Returns(true);
 
-            DataManager obje = new DataManager();
-            Assert.AreEqual(obje.insertEmployee(chk.Object), true); 
+            DataManager obje = new DataManager(chk.Object);
+            Assert.AreEqual(obje.DeleteNode(2), true); 
         }
     }
 }

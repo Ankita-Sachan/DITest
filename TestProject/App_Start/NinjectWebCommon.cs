@@ -12,6 +12,8 @@ namespace TestProject.App_Start
     using Ninject.Web.Common;
     using ServicesAndInterfaces.Interfaces;
     using ServicesAndInterfaces.Services;
+    using System.IO;
+    using Ninject.Parameters;
 
     public static class NinjectWebCommon 
     {
@@ -46,7 +48,11 @@ namespace TestProject.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+                string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Persons.xml");
+                //CheckNode m = kernel.Get<CheckNode>(new ConstructorArgument("_fileName", fileName));
+                kernel.Bind<ICheckNode>().To<CheckNode>().WithConstructorArgument(typeof(string), fileName);
                 kernel.Bind<IDataManager>().To<DataManager>();
+                
                 RegisterServices(kernel);
                 return kernel;
             }

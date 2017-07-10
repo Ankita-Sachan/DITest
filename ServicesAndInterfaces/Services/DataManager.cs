@@ -12,10 +12,16 @@ namespace ServicesAndInterfaces.Services
 {
     public class DataManager : IDataManager
     {
-        public List<Person> lstPerson = new List<Person>();
-        public string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Persons.xml");
+        
+        private string fileName ;
+
+        public DataManager(ICheckNode _iChechNode)
+        {
+            fileName = _iChechNode.FileName;
+        }
 
         public bool CreateXml() {
+             
             if (!File.Exists(fileName))
             {
                 XmlWriterSettings settings = new XmlWriterSettings();
@@ -47,6 +53,7 @@ namespace ServicesAndInterfaces.Services
         }
         public List<Person> GetAll()
         {
+            List<Person> lstPerson = new List<Person>();
             XDocument doc = null;
             doc = XDocument.Load(fileName);
             using (XmlReader reader = XmlReader.Create(fileName))

@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
+using Entities.Models;
 
 namespace ServicesAndInterfaces.Interfaces
 {
-    public interface ICheckData
+    public interface ICheckNode
     {
+
+
+         string FileName { get; }
+        
         bool IsNodeExist(int id);
     }
 }

@@ -26,4 +26,15 @@ C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\bin\Debug\System.W
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.dll
 C:\Users\Ankita Sachan\Desktop\AutomationTest\UnitTestProject\obj\Debug\UnitTestProject.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\UnitTestProject.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Castle.Core.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Entities.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Moq.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\ServicesAndInterfaces.dll
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Entities.pdb
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\Moq.xml
+F:\Git hub repositiory\DITest\UnitTestProject\bin\Debug\ServicesAndInterfaces.pdb
 F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.dll
+F:\Git hub repositiory\DITest\UnitTestProject\obj\Debug\UnitTestProject.pdb
