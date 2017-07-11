@@ -18,12 +18,14 @@ namespace UnitTestProject
 
         public UnitTest1()
         {
-            chk.SetupGet(x => x.FileName).Returns(fileName);
+            //Initializing file name 
+            
         }
         //Sequentially Execute Test Case 
         [TestMethod]
         public void IsFileExist()
         {
+            
             DataFileValidation obje = new DataFileValidation(fileName);
             Assert.IsTrue(obje.IsFileExist());
         }
@@ -47,17 +49,23 @@ namespace UnitTestProject
         [TestMethod]
         public void InsertNode()
         {
-            Person person = new Person { id = 6, Name = "Ankita", Age = 2, Gender = "Female" };
-            IsFileExist();
+            chk.SetupGet(x => x.FileName).Returns(fileName);
+            chk.Setup(x => x.IsFileExist()).Returns(true);
+            Person person = new Person { id = 1, Name = "Ankita", Age = 2, Gender = "Female" };
+           
             DataManager obje = new DataManager(chk.Object);
             Assert.AreEqual(obje.InsertNode(person), true);
         }
         [TestMethod]
         public void DeleteNode()
         {
+            chk.SetupGet(x => x.FileName).Returns(fileName);
             int deleteNodeid = 1;
             DataManager obje = new DataManager(chk.Object);
             Assert.IsTrue(obje.DeleteNode(deleteNodeid));
         }
+
+
+       
     }
 }

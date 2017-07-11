@@ -108,7 +108,7 @@ namespace ServicesAndInterfaces.Services
         }
         public bool DeleteNode(int id)
         {
-            if (!IsNodeExist(id)) { return false; }
+            //if (!IsNodeExist(id)) { return false; }
 
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
@@ -130,9 +130,11 @@ namespace ServicesAndInterfaces.Services
             }
 
         }
+
+
         public Boolean InsertNode(Person person)
         {
-            if (IsNodeExist(person.id)) { return false; }
+         
             bool insertAfter = false;
             int idAfter = 0;
             XmlDocument doc = new XmlDocument();
